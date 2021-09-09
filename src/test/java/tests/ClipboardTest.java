@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class ClipboardTest extends TestBase {
+public class ClipboardTest  {
     @Test
     @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Check clipboard copy past")
