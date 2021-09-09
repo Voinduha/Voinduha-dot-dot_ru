@@ -16,7 +16,7 @@ public class MainPageTest extends TestBase {
     @DisplayName("Page blocks should be loaded")
     void blocksLoadedTest() {
 
-        step("Open url 'https://dot-dot.ru/'", () ->
+        step("Открываем url 'https://dot-dot.ru/'", () ->
                 open("https://dot-dot.ru/"));
 
         step("Проверяем, что на странице видна ссылка 'Клиентам'", () -> {
