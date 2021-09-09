@@ -19,12 +19,13 @@ public class GeneratedTests extends TestBase {
     @DisplayName("dot-dot.ru")
     void generatedTest() {
         step("Открываем url 'https://dot-dot.ru/'", () ->
-                open("https://dot-dot.ru/"));
+                open(""));
 
-        step("Проверяем, что есть текст \"Помогаем экономить на междугородней автомобильной перевозке\"",
-                () -> {
-                    $(".main-hero").shouldHave(text("Помогаем экономить на междугородней автомобильной перевозке"));
-                });
+        step("Проверяем, что на главной странице есть текст \"Помогаем экономить на междугородней автомобильной" +
+                        " перевозке\"", () -> {
+
+            $(".main-hero").shouldHave(text("Помогаем экономить на междугородней автомобильной перевозке"));
+        });
     }
 
     @Test
@@ -32,7 +33,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Заголовок страницы должен содержать данный текст")
     void titleTest() {
         step("Открываем url 'https://dot-dot.ru/'", () ->
-                open("https://dot-dot.ru/"));
+                open(""));
 
         step("В заголовке страницы должен быть текст: 'Грузоперевозки по России — Точка-Точка'", () -> {
             String expectedTitle = "Грузоперевозки по России — Точка-Точка";
@@ -47,7 +48,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("В консоли браузера не должно быть ошибок")
     void consoleShouldNotHaveErrorsTest() {
         step("Открываем url 'https://dot-dot.ru/'", () ->
-                open("https://dot-dot.ru/"));
+                open(""));
 
         step("В консоли браузера не должно быть текста: 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();

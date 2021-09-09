@@ -8,9 +8,12 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
 
+import static Utils.Files.readTextFromFile;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.files.FileFilters.withExtension;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 
 public class DownloadTest {
 
@@ -22,6 +25,8 @@ public class DownloadTest {
 
         open("https://dot-dot.ru/media/download/7566");
         File downloadedFile = $("about__link").download(withExtension("htm"));
+        String fileContent = readTextFromFile(downloadedFile);
+        assertThat(fileContent, containsString("Презентация"));
     }
 }
 

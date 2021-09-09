@@ -21,7 +21,7 @@ public class ClipboardTest extends TestBase {
     void clipboardLoadTest() {
 
         step("Открываем url 'https://dot-dot.ru/'", () ->
-                open("https://dot-dot.ru/"));
+                open(""));
 
         step("Вставляем текст в буфер обмена", () -> {
             Selenide.clipboard().setText("9256545667");

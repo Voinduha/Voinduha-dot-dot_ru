@@ -17,7 +17,7 @@ public class MainPageTest extends TestBase {
     void blocksLoadedTest() {
 
         step("Открываем url 'https://dot-dot.ru/'", () ->
-                open("https://dot-dot.ru/"));
+                open(""));
 
         step("Проверяем, что на странице видна ссылка 'Клиентам'", () -> {
             $("#header").shouldHave(text("Клиентам")).shouldBe(visible);
