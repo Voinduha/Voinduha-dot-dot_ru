@@ -16,7 +16,7 @@ public class DownloadTest {
 
     @Test
     @Description("Soon to be implemented by me (or QA engineers)")
-    @DisplayName("Download presentation file from Clients tab")
+    @DisplayName("Загружаем файл с презентацией компании")
     void presentationDownload() throws IOException {
         Configuration.downloadsFolder = "downloads";
 
