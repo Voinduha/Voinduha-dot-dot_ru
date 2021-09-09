@@ -3,8 +3,6 @@ package tests;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.DisabledIfSystemProperties;
-import org.junit.jupiter.api.condition.DisabledIfSystemProperty;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -22,12 +20,15 @@ public class MainPageTest extends TestBase {
                 open("https://dot-dot.ru/"));
 
         step("Проверяем, что на странице видна ссылка 'Клиентам'", () -> {
-                    $("#header").shouldHave(text("Клиентам")).shouldBe(visible); });
+            $("#header").shouldHave(text("Клиентам")).shouldBe(visible);
+        });
 
         step("Проверяем, что на странице видна ссылка 'Перевозчикам'", () -> {
-                    $("#header").shouldHave(text("Перевозчикам")).shouldBe(visible); });
+            $("#header").shouldHave(text("Перевозчикам")).shouldBe(visible);
+        });
 
         step("Проверяем, что на странице видна ссылка 'Отследить заказ'", () -> {
-                    $("#header").shouldHave(text("Отследить заказ")).shouldBe(visible); });
+            $("#header").shouldHave(text("Отследить заказ")).shouldBe(visible);
+        });
     }
 }

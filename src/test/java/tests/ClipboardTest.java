@@ -12,10 +12,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class ClipboardTest  {
+public class ClipboardTest {
     @Test
-    @DisabledIfSystemProperty(named = "selenide.remote", matches = "http.*", disabledReason = "Clipboard not " +
-            "support on Selenium Grid yet")
+    //@DisabledIfSystemProperty(named = "selenide.remote", matches = "http.*", disabledReason = "Clipboard not " +
+    //        "support on Selenium Grid yet")
     @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Check clipboard copy past")
     void clipboardLoadTest() {
