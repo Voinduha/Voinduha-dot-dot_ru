@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class MainPageTest extends TestBase {
     @Test
     @Description("Soon to be implemented by me (or QA engineers)")
-    @DisplayName("Page blocks should be loaded")
+    @DisplayName("В шапке на странице должны быть ссылки: 'Клиентам', 'Перевозчикам', 'Отследить заказ'")
     void blocksLoadedTest() {
 
         step("Открываем url 'https://dot-dot.ru/'", () ->
