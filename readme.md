@@ -40,6 +40,8 @@
 - [X] :mango: Main Page test
 - [X] :banana: Generated test
 - [X] :orange: Download file test
+- [X] :strawberry: Clipboard copy/past phone test
+
 
 ## Screenshots
 
