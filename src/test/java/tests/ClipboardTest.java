@@ -17,7 +17,7 @@ public class ClipboardTest extends TestBase {
     @DisplayName("Check clipboard copy past")
     void clipboardLoadTest() {
 
-        step("Open url 'https://dot-dot.ru/'", () ->
+        step("Открываем url 'https://dot-dot.ru/'", () ->
                 open("https://dot-dot.ru/"));
 
         step("Вставляем текст в буфер обмена", () -> {
