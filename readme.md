@@ -51,3 +51,6 @@
 #### *Jenkins - it is an open source automation server:*
 ![selenoid_screenshot](src/test/resources/images/2021-09-09_10-53-51.png)
 
+### Contacts:
+
+[![Telegram](https://img.shields.io/badge/-Telegram-0b0a1a?style=for-the-badge&logo=telegram&logoColor=27A0D9)](https://t.me/Voinduha)
