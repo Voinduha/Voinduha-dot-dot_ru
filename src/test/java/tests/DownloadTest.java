@@ -15,7 +15,7 @@ import static com.codeborne.selenide.files.FileFilters.withExtension;
 public class DownloadTest {
 
     @Test
-    @Description("Manually generated test")
+    @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Download presentation file from Clients tab")
     void presentationDownload() throws IOException {
         Configuration.downloadsFolder = "downloads";

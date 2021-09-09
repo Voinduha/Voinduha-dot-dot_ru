@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GeneratedTests extends TestBase {
     @Test
-    @Description("Soon to be implemented by you (or QA.GURU engineers)")
+    @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("dot-dot.ru")
     void generatedTest() {
         step("Open url 'https://dot-dot.ru/'", () ->

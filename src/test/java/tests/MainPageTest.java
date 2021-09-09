@@ -12,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 
 public class MainPageTest extends TestBase {
     @Test
-    @Description("Soon to be implemented by you (or QA.GURU engineers)")
+    @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Page blocks should be loaded")
     void blocksLoadedTest() {
 

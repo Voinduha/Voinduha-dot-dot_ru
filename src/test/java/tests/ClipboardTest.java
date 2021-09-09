@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 
 public class ClipboardTest extends TestBase {
     @Test
-    @Description("Soon to be implemented by you (or QA.GURU engineers)")
+    @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Check clipboard copy past")
     void clipboardLoadTest() {
 
