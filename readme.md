@@ -46,5 +46,8 @@
 #### *Allure Report - it is a flexible lightweight test report tool:*
 ![selenoid_screenshot](src/test/resources/images/2021-09-09_10-49-00.png)
 
+![selenoid_screenshot](src/test/resources/images/2021-09-09_11-48-54.png)
+
 #### *Jenkins - it is an open source automation server:*
 ![selenoid_screenshot](src/test/resources/images/2021-09-09_10-53-51.png)
+
