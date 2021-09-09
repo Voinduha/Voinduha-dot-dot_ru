@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledIfSystemProperty;
 import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -13,6 +14,8 @@ import static io.qameta.allure.Allure.step;
 
 public class ClipboardTest  {
     @Test
+    @DisabledIfSystemProperty(named = "selenide.remote", matches = "http.*", disabledReason = "Clipboard not " +
+            "support on Selenium Grid yet")
     @Description("Soon to be implemented by me (or QA engineers)")
     @DisplayName("Check clipboard copy past")
     void clipboardLoadTest() {
