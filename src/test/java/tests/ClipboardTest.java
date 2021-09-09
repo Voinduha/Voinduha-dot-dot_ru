@@ -17,7 +17,7 @@ public class ClipboardTest extends TestBase {
     @DisabledIfSystemProperty(named = "selenide.remote", matches = "http.*", disabledReason = "Clipboard not " +
     "support on Selenium Grid yet")
     @Description("Soon to be implemented by me (or QA engineers)")
-    @DisplayName("Check clipboard copy past")
+    @DisplayName("Проверяем копипасту из буфера обмена в поле ввода телефона на странице")
     void clipboardLoadTest() {
 
         step("Открываем url 'https://dot-dot.ru/'", () ->
