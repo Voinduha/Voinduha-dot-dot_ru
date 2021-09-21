@@ -24,6 +24,7 @@ allure {
 dependencies {
     testImplementation(
             "org.aspectj:aspectjweaver:1.9.6",
+            "com.codeborne:pdf-test:1.6.1",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.aeonbits.owner:owner:1.0.12",
@@ -63,3 +64,5 @@ tasks.withType(Test) {
         }
     }
 }
+sourceCompatibility = JavaVersion.VERSION_1_9
+targetCompatibility = JavaVersion.VERSION_1_9
